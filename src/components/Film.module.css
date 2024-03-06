@@ -1,0 +1,53 @@
+.film {
+  display: flex;
+  border: 1px solid white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.film:hover {
+  background-color: rgba(240, 248, 255, 0.099);
+}
+
+.numer {
+  color: darkblue;
+  background-color: aliceblue;
+  position: absolute;
+  left: 20px;
+  min-width: 15px;
+  border-radius: 5px;
+  padding: 0 1px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  gap: 10px;
+  margin-left: 20px;
+  text-align: start;
+  width: 50%;
+  background-color: initial;
+}
+
+.poster {
+  margin-left: 40px;
+  width: 72px;
+  height: 108px;
+  object-fit: cover;
+}
+
+.mainInfo {
+  font-size: 12px;
+}
+
+.secondInfo {
+  font-size: 16px;
+  justify-self: end;
+}
+
+.rating p {
+  text-align: right;
+}
