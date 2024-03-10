@@ -1,0 +1,807 @@
+{
+  "fees": {
+    "world": {
+      "value": 115171795,
+      "currency": "$"
+    },
+    "russia": {
+      "value": 18003343,
+      "currency": "$"
+    },
+    "usa": {
+      "value": 36471795,
+      "currency": "$"
+    }
+  },
+  "status": null,
+  "externalId": {
+    "imdb": "tt8367814",
+    "tmdb": 522627,
+    "kpHD": "47649cf90de74aca8da7eb5b17fc8a8a"
+  },
+  "rating": {
+    "kp": 8.566,
+    "imdb": 7.8,
+    "filmCritics": 6.5,
+    "russianFilmCritics": 85.7143,
+    "await": null
+  },
+  "votes": {
+    "kp": 1674187,
+    "imdb": 385757,
+    "filmCritics": 278,
+    "russianFilmCritics": 21,
+    "await": 13639
+  },
+  "backdrop": {
+    "url": "https://image.openmoviedb.com/tmdb-images/original/tintsaQ0WLzZsTMkTiqtMB3rfc8.jpg",
+    "previewUrl": "https://image.openmoviedb.com/tmdb-images/w500/tintsaQ0WLzZsTMkTiqtMB3rfc8.jpg"
+  },
+  "movieLength": 113,
+  "images": {
+    "framesCount": 12
+  },
+  "productionCompanies": [
+    {
+      "name": "Miramax",
+      "url": "https://www.themoviedb.org/t/p/original/m6AHu84oZQxvq7n1rsvMNJIAsMu.png",
+      "previewUrl": "https://www.themoviedb.org/t/p/w500/m6AHu84oZQxvq7n1rsvMNJIAsMu.png"
+    },
+    {
+      "name": "STX Films",
+      "url": null,
+      "previewUrl": null
+    },
+    {
+      "name": "Toff Guy Films",
+      "url": null,
+      "previewUrl": null
+    },
+    {
+      "name": "Leonine",
+      "url": null,
+      "previewUrl": null
+    }
+  ],
+  "spokenLanguages": [
+    {
+      "name": "English",
+      "nameEn": "English"
+    }
+  ],
+  "id": 1143242,
+  "type": "movie",
+  "name": "Джентльмены",
+  "description": "Один ушлый американец ещё со студенческих лет приторговывал наркотиками, а теперь придумал схему нелегального обогащения с использованием поместий обедневшей английской аристократии и очень неплохо на этом разбогател. Другой пронырливый журналист приходит к Рэю, правой руке американца, и предлагает тому купить киносценарий, в котором подробно описаны преступления его босса при участии других представителей лондонского криминального мира — партнёра-еврея, китайской диаспоры, чернокожих спортсменов и даже русского олигарха.",
+  "distributors": {
+    "distributor": "Вольга",
+    "distributorRelease": null
+  },
+  "premiere": {
+    "world": "2019-12-03T00:00:00.000Z",
+    "russia": "2020-02-13T00:00:00.000Z",
+    "digital": "2020-03-31T00:00:00.000Z"
+  },
+  "slogan": "Criminal. Class",
+  "year": 2019,
+  "budget": {
+    "value": 22000000,
+    "currency": "$"
+  },
+  "poster": {
+    "url": "https://image.openmoviedb.com/kinopoisk-images/1599028/637271d5-61b4-4e46-ac83-6d07494c7645/orig",
+    "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1599028/637271d5-61b4-4e46-ac83-6d07494c7645/x1000"
+  },
+  "facts": [
+    {
+      "value": "<a href=\"/name/8090/\" class=\"all\">Хью Грант</a> и <a href=\"/name/38702/\" class=\"all\">Чарли Ханнэм</a> снимали свои сцены в течение 5 дней, и за это время произнесли более 40 страниц диалогов.",
+      "type": "FACT",
+      "spoiler": false
+    },
+    {
+      "value": "Когда Майкл возвращается в паб, снаружи зритель видит фургончик с надписью Gritchie Brewery. Пивоваренной компанией с таким названием владеет режиссёр фильма Гай Ричи.",
+      "type": "FACT",
+      "spoiler": false
+    },
+    {
+      "value": "<a href=\"/name/8090/\" class=\"all\">Хью Грант</a> и <a href=\"/name/797/\" class=\"all\">Мэттью МакКонахи</a> ни разу не встретились на съемочной площадке.",
+      "type": "FACT",
+      "spoiler": true
+    },
+    {
+      "value": "Ближе к концу фильма герой <a href=\"/name/8090/\" class=\"all\">Хью Гранта</a> стоит перед постером фильма &#171;<a href=\"/film/518042/\" class=\"all\">Агенты А.Н.К.Л.</a>&#187; (2015), который тоже снял <a href=\"/name/45159/\" class=\"all\">Гай Ричи</a>, и в котором он тоже сыграл.",
+      "type": "FACT",
+      "spoiler": true
+    },
+    {
+      "value": "В начале фильма Розалинд Пирсон (<a href=\"/name/1067193/\" class=\"all\">Мишель Докери</a>) заходит в гараж в туфлях с красной подошвой, но в офисе видно, что у её туфель светлые подошвы.",
+      "type": "BLOOPER",
+      "spoiler": true
+    },
+    {
+      "value": "Когда Рей забегает в подворотню в погоне за парнем с телефоном, он достаёт из-под плаща автомат. После того как телефон был получен, он отпускает автомат, и ствол (глушитель) автомата видно из-под плаща. Хотя во всех предыдущих кадрах погони видно, что у Рея под плащом ничего нет.",
+      "type": "BLOOPER",
+      "spoiler": true
+    }
+  ],
+  "genres": [
+    {
+      "name": "криминал"
+    },
+    {
+      "name": "комедия"
+    },
+    {
+      "name": "боевик"
+    }
+  ],
+  "countries": [
+    {
+      "name": "США"
+    },
+    {
+      "name": "Великобритания"
+    }
+  ],
+  "seasonsInfo": [],
+  "persons": [
+    {
+      "id": 797,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_797.jpg",
+      "name": "Мэттью Макконахи",
+      "enName": "Matthew McConaughey",
+      "description": "Michael Pearson",
+      "profession": "актеры",
+      "enProfession": "actor"
+    },
+    {
+      "id": 38702,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_38702.jpg",
+      "name": "Чарли Ханнэм",
+      "enName": "Charlie Hunnam",
+      "description": "Ray",
+      "profession": "актеры",
+      "enProfession": "actor"
+    },
+    {
+      "id": 4950097,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_4950097.jpg",
+      "name": "Генри Голдинг",
+      "enName": "Henry Golding",
+      "description": "Dry Eye",
+      "profession": "актеры",
+      "enProfession": "actor"
+    },
+    {
+      "id": 8090,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_8090.jpg",
+      "name": "Хью Грант",
+      "enName": "Hugh Grant",
+      "description": "Fletcher",
+      "profession": "актеры",
+      "enProfession": "actor"
+    },
+    {
+      "id": 1067193,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1067193.jpg",
+      "name": "Мишель Докери",
+      "enName": "Michelle Dockery",
+      "description": "Rosalind Pearson",
+      "profession": "актеры",
+      "enProfession": "actor"
+    },
+    {
+      "id": 1146480,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1146480.jpg",
+      "name": "Джереми Стронг",
+      "enName": "Jeremy Strong",
+      "description": "Matthew",
+      "profession": "актеры",
+      "enProfession": "actor"
+    },
+    {
+      "id": 2444,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_2444.jpg",
+      "name": "Эдди Марсан",
+      "enName": "Eddie Marsan",
+      "description": "Big Dave",
+      "profession": "актеры",
+      "enProfession": "actor"
+    },
+    {
+      "id": 2454111,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_2454111.jpg",
+      "name": "Джейсон Вонг",
+      "enName": "Jason Wong",
+      "description": "Phuc",
+      "profession": "актеры",
+      "enProfession": "actor"
+    },
+    {
+      "id": 373,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_373.jpg",
+      "name": "Колин Фаррелл",
+      "enName": "Colin Farrell",
+      "description": "Coach",
+      "profession": "актеры",
+      "enProfession": "actor"
+    },
+    {
+      "id": 1006787,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1006787.jpg",
+      "name": "Лин Рене",
+      "enName": "Lyne Renée",
+      "description": "Jackie",
+      "profession": "актеры",
+      "enProfession": "actor"
+    },
+    {
+      "id": 3604626,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_3604626.jpg",
+      "name": "Кристофер Бенстед",
+      "enName": "Christopher Benstead",
+      "description": null,
+      "profession": "композиторы",
+      "enProfession": "composer"
+    },
+    {
+      "id": 5204254,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_5204254.jpg",
+      "name": "Рэйчел Олтон",
+      "enName": "Rachel Aulton",
+      "description": null,
+      "profession": "художники",
+      "enProfession": "designer"
+    },
+    {
+      "id": 3960382,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_3960382.jpg",
+      "name": "Оливер Кэрролл",
+      "enName": "Oliver Carroll",
+      "description": null,
+      "profession": "художники",
+      "enProfession": "designer"
+    },
+    {
+      "id": 1997136,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1997136.jpg",
+      "name": "Фиона Гэвин",
+      "enName": "Fiona Gavin",
+      "description": null,
+      "profession": "художники",
+      "enProfession": "designer"
+    },
+    {
+      "id": 1986750,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1986750.jpg",
+      "name": "Майкл Уилкинсон",
+      "enName": "Michael Wilkinson",
+      "description": null,
+      "profession": "художники",
+      "enProfession": "designer"
+    },
+    {
+      "id": 2174208,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_2174208.jpg",
+      "name": "Нил Флойд",
+      "enName": "Neil Floyd",
+      "description": null,
+      "profession": "художники",
+      "enProfession": "designer"
+    },
+    {
+      "id": 1996199,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1996199.jpg",
+      "name": "Сара Уиттл",
+      "enName": "Sarah Whittle",
+      "description": null,
+      "profession": "художники",
+      "enProfession": "designer"
+    },
+    {
+      "id": 45159,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_45159.jpg",
+      "name": "Гай Ричи",
+      "enName": "Guy Ritchie",
+      "description": null,
+      "profession": "режиссеры",
+      "enProfession": "director"
+    },
+    {
+      "id": 1987046,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1987046.jpg",
+      "name": "Джеймс Херберт",
+      "enName": "James Herbert",
+      "description": null,
+      "profession": "монтажеры",
+      "enProfession": "editor"
+    },
+    {
+      "id": 1986047,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1986047.jpg",
+      "name": "Пол Мачлисс",
+      "enName": "Paul Machliss",
+      "description": null,
+      "profession": "монтажеры",
+      "enProfession": "editor"
+    },
+    {
+      "id": 643927,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_643927.jpg",
+      "name": "Алан Стюарт",
+      "enName": "Alan Stewart",
+      "description": null,
+      "profession": "операторы",
+      "enProfession": "operator"
+    },
+    {
+      "id": 6032456,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_6032456.jpg",
+      "name": "Мэттью Андерсон",
+      "enName": "Matthew Anderson",
+      "description": null,
+      "profession": "продюсеры",
+      "enProfession": "producer"
+    },
+    {
+      "id": 4984694,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_4984694.jpg",
+      "name": "Айван Эткинсон",
+      "enName": "Ivan Atkinson",
+      "description": null,
+      "profession": "продюсеры",
+      "enProfession": "producer"
+    },
+    {
+      "id": 51810,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_51810.jpg",
+      "name": "Билл Блок",
+      "enName": "Bill Block",
+      "description": null,
+      "profession": "продюсеры",
+      "enProfession": "producer"
+    },
+    {
+      "id": 4360695,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_4360695.jpg",
+      "name": "Адам Фогельсон",
+      "enName": "Adam Fogelson",
+      "description": null,
+      "profession": "продюсеры",
+      "enProfession": "producer"
+    },
+    {
+      "id": 1078858,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1078858.jpg",
+      "name": "Василий Дахненко",
+      "enName": null,
+      "description": null,
+      "profession": "актеры дубляжа",
+      "enProfession": "voice_actor"
+    },
+    {
+      "id": 2340955,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_2340955.jpg",
+      "name": "Сергей Смирнов",
+      "enName": null,
+      "description": null,
+      "profession": "актеры дубляжа",
+      "enProfession": "voice_actor"
+    },
+    {
+      "id": 1646082,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1646082.jpg",
+      "name": "Филипп Бледный",
+      "enName": null,
+      "description": null,
+      "profession": "актеры дубляжа",
+      "enProfession": "voice_actor"
+    },
+    {
+      "id": 304577,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_304577.jpg",
+      "name": "Алексей Иващенко",
+      "enName": null,
+      "description": null,
+      "profession": "актеры дубляжа",
+      "enProfession": "voice_actor"
+    },
+    {
+      "id": 1641154,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1641154.jpg",
+      "name": "Татьяна Шитова",
+      "enName": null,
+      "description": null,
+      "profession": "актеры дубляжа",
+      "enProfession": "voice_actor"
+    },
+    {
+      "id": 45159,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_45159.jpg",
+      "name": "Гай Ричи",
+      "enName": "Guy Ritchie",
+      "description": null,
+      "profession": "редакторы",
+      "enProfession": "writer"
+    },
+    {
+      "id": 4984694,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_4984694.jpg",
+      "name": "Айван Эткинсон",
+      "enName": "Ivan Atkinson",
+      "description": null,
+      "profession": "редакторы",
+      "enProfession": "writer"
+    },
+    {
+      "id": 1910756,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1910756.jpg",
+      "name": "Марн Дэвис",
+      "enName": "Marn Davies",
+      "description": null,
+      "profession": "редакторы",
+      "enProfession": "writer"
+    },
+    {
+      "id": 1266524,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1266524.jpg",
+      "name": "Лорен Бонд",
+      "enName": "Lauren Bond",
+      "description": null,
+      "profession": "редакторы",
+      "enProfession": "writer"
+    }
+  ],
+  "lists": [
+    "top500",
+    "top250",
+    "popular-films",
+    "hd-blockbusters",
+    "hd-revise",
+    "ozvucheno_kubik_v_kube",
+    "box-russia-dollar",
+    "hearing_impairment",
+    "top20of2023",
+    "hd"
+  ],
+  "typeNumber": 1,
+  "alternativeName": "The Gentlemen",
+  "enName": null,
+  "names": [
+    {
+      "name": "Джентльмены"
+    },
+    {
+      "name": "The Gentlemen"
+    },
+    {
+      "name": "Toff Guys",
+      "language": "GB",
+      "type": "working title"
+    },
+    {
+      "name": "Los Caballeros de la mafia",
+      "language": "ES",
+      "type": null
+    },
+    {
+      "name": "Busha",
+      "language": "GB",
+      "type": "working title"
+    },
+    {
+      "name": "Los caballeros: criminales con clase",
+      "language": "AR",
+      "type": null
+    },
+    {
+      "name": "紳士追殺令",
+      "language": "TW",
+      "type": null
+    },
+    {
+      "name": "Джентльмени",
+      "language": "UA",
+      "type": null
+    },
+    {
+      "name": "Εγκληματίες πρώτης τάξεως",
+      "language": "GR",
+      "type": null
+    },
+    {
+      "name": "ジェントルメン：2020",
+      "language": "JP",
+      "type": null
+    }
+  ],
+  "color": "#DBCCC2",
+  "networks": null,
+  "shortDescription": "Наркобарон хочет уйти на покой, но криминальный мир не отпускает. Успешное возвращение Гая Ричи к корням",
+  "subType": null,
+  "updatedAt": "2024-03-07T01:00:21.641Z",
+  "ratingMpaa": "r",
+  "technology": {
+    "hasImax": false,
+    "has3D": false
+  },
+  "ticketsOnSale": false,
+  "similarMovies": [
+    {
+      "id": 526,
+      "name": "Большой куш",
+      "enName": null,
+      "alternativeName": "Snatch",
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/47fe48f6-ff17-4411-a12f-d337bea2639d/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/47fe48f6-ff17-4411-a12f-d337bea2639d/x1000"
+      },
+      "year": 2000,
+      "rating": {
+        "kp": 8.552,
+        "imdb": 8.2,
+        "filmCritics": 6.4,
+        "russianFilmCritics": 100,
+        "await": null
+      }
+    },
+    {
+      "id": 522,
+      "name": "Карты, деньги, два ствола",
+      "enName": null,
+      "alternativeName": "Lock, Stock and Two Smoking Barrels",
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/6492653f-11d5-4087-a1d2-ec7a74f161d3/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/6492653f-11d5-4087-a1d2-ec7a74f161d3/x1000"
+      },
+      "year": 1998,
+      "rating": {
+        "kp": 8.558,
+        "imdb": 8.1,
+        "filmCritics": 6.7,
+        "russianFilmCritics": 0,
+        "await": null
+      }
+    },
+    {
+      "id": 378140,
+      "name": "Рок-н-рольщик",
+      "enName": null,
+      "alternativeName": "RocknRolla",
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/ec91f3d0-70ec-4292-917d-5b170d7663f6/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/ec91f3d0-70ec-4292-917d-5b170d7663f6/x1000"
+      },
+      "year": 2008,
+      "rating": {
+        "kp": 7.833,
+        "imdb": 7.2,
+        "filmCritics": 6,
+        "russianFilmCritics": 40,
+        "await": null
+      }
+    },
+    {
+      "id": 86326,
+      "name": "Счастливое число Слевина",
+      "enName": null,
+      "alternativeName": "Lucky Number Slevin",
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/b902fcb3-ca6f-4247-8e70-69f84e67087e/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/b902fcb3-ca6f-4247-8e70-69f84e67087e/x1000"
+      },
+      "year": 2005,
+      "rating": {
+        "kp": 8.127,
+        "imdb": 7.7,
+        "filmCritics": 5.9,
+        "russianFilmCritics": 80,
+        "await": null
+      }
+    },
+    {
+      "id": 342,
+      "name": "Криминальное чтиво",
+      "enName": null,
+      "alternativeName": "Pulp Fiction",
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/87b5659d-a159-4224-9bff-d5a5d109a53b/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/87b5659d-a159-4224-9bff-d5a5d109a53b/x1000"
+      },
+      "year": 1994,
+      "rating": {
+        "kp": 8.65,
+        "imdb": 8.9,
+        "filmCritics": 9.2,
+        "russianFilmCritics": 100,
+        "await": null
+      }
+    },
+    {
+      "id": 18973,
+      "name": "Револьвер",
+      "enName": null,
+      "alternativeName": "Revolver",
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/f5332488-ac63-4b32-b2f4-864da3542bca/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/f5332488-ac63-4b32-b2f4-864da3542bca/x1000"
+      },
+      "year": 2005,
+      "rating": {
+        "kp": 7.376,
+        "imdb": 6.3,
+        "filmCritics": 3.5,
+        "russianFilmCritics": 100,
+        "await": null
+      }
+    },
+    {
+      "id": 47250,
+      "name": "Слоеный торт",
+      "enName": null,
+      "alternativeName": "Layer Cake",
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/cb06c3c3-760d-4c13-9eff-6d5f6c6b5fe6/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/cb06c3c3-760d-4c13-9eff-6d5f6c6b5fe6/x1000"
+      },
+      "year": 2004,
+      "rating": {
+        "kp": 7.163,
+        "imdb": 7.3,
+        "filmCritics": 7,
+        "russianFilmCritics": 0,
+        "await": null
+      }
+    },
+    {
+      "id": 586584,
+      "name": "Семь психопатов",
+      "enName": null,
+      "alternativeName": "Seven Psychopaths",
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/58c54778-cb77-486f-a584-fbea76bb098a/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/58c54778-cb77-486f-a584-fbea76bb098a/x1000"
+      },
+      "year": 2012,
+      "rating": {
+        "kp": 7.345,
+        "imdb": 7.1,
+        "filmCritics": 7.1,
+        "russianFilmCritics": 93.3333,
+        "await": null
+      }
+    },
+    {
+      "id": 1236393,
+      "name": "Голяк",
+      "enName": null,
+      "alternativeName": "Brassic",
+      "type": "tv-series",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/a2a3d9d6-7e5a-4e0c-8602-66e29811be23/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/a2a3d9d6-7e5a-4e0c-8602-66e29811be23/x1000"
+      },
+      "year": 2019,
+      "rating": {
+        "kp": 8.624,
+        "imdb": 8.4,
+        "filmCritics": 0,
+        "russianFilmCritics": 100,
+        "await": null
+      }
+    },
+    {
+      "id": 17098,
+      "name": "Долгая Страстная пятница",
+      "enName": null,
+      "alternativeName": "The Long Good Friday",
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/8750f1d7-40ef-49cb-b7eb-315a301e5676/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/8750f1d7-40ef-49cb-b7eb-315a301e5676/x1000"
+      },
+      "year": 1979,
+      "rating": {
+        "kp": 7.358,
+        "imdb": 7.6,
+        "filmCritics": 8.1,
+        "russianFilmCritics": 0,
+        "await": null
+      }
+    }
+  ],
+  "sequelsAndPrequels": [],
+  "imagesInfo": {
+    "framesCount": 12
+  },
+  "ageRating": 18,
+  "logo": {
+    "url": "https://avatars.mds.yandex.net/get-ott/1534341/2a00000176f18064fd95abb74cbcc02873b8/orig"
+  },
+  "watchability": {
+    "items": [
+      {
+        "name": "Okko",
+        "logo": {
+          "url": "https://avatars.mds.yandex.net/get-ott/239697/7713e586-17d1-42d1-ac62-53e9ef1e70c3/orig"
+        },
+        "url": "https://okko.tv/movie/the-gentlemen?utm_medium=referral&utm_source=yandex_search&utm_campaign=new_search_feed"
+      },
+      {
+        "name": "Иви",
+        "logo": {
+          "url": "https://avatars.mds.yandex.net/get-ott/2419418/0dfd1724-848f-4725-9160-abc571f41c11/orig"
+        },
+        "url": "https://www.ivi.ru/watch/216926?utm_source=yandex&utm_medium=wizard"
+      },
+      {
+        "name": "KION",
+        "logo": {
+          "url": "https://avatars.mds.yandex.net/get-ott/239697/daeb142e-3ecc-4bb2-9bff-4827996643ab/orig"
+        },
+        "url": "https://kion.ru/video/movie/169735638?utm_source=yandex&utm_medium=organic&utm_campaign=wizard"
+      },
+      {
+        "name": "Kinopoisk HD",
+        "logo": {
+          "url": "https://yastatic.net/s3/kinopoisk-frontend/hd-www/release/apple-touch-icon-180x180.png"
+        },
+        "url": "https://hd.kinopoisk.ru/?rt=47649cf90de74aca8da7eb5b17fc8a8a"
+      }
+    ]
+  },
+  "top10": null,
+  "top250": 25,
+  "deletedAt": null,
+  "isSeries": false,
+  "seriesLength": null,
+  "totalSeriesLength": null,
+  "videos": {
+    "trailers": [
+      {
+        "url": "https://www.youtube.com/embed/e-aiHVdRlJg",
+        "name": "ДЖЕНТЛЬМЕНЫ | Трейлер #2 | В кино с 13 февраля",
+        "site": "youtube",
+        "type": "TRAILER"
+      },
+      {
+        "url": "https://www.youtube.com/embed/Fui5_1tTuac",
+        "name": "ДЖЕНТЛЬМЕНЫ | Трейлер | В кино с 13 февраля",
+        "site": "youtube",
+        "type": "TRAILER"
+      },
+      {
+        "url": "https://www.youtube.com/embed/e-aiHVdRlJg",
+        "name": "ДЖЕНТЛЬМЕНЫ | Трейлер #2 | В кино с 13 февраля",
+        "site": "youtube",
+        "type": "TRAILER"
+      },
+      {
+        "url": "https://www.youtube.com/embed/Fui5_1tTuac",
+        "name": "ДЖЕНТЛЬМЕНЫ | Трейлер | В кино с 13 февраля",
+        "site": "youtube",
+        "type": "TRAILER"
+      },
+      {
+        "url": "https://www.youtube.com/embed/KlXsguV9g0E",
+        "name": "The Gentlemen | Official Trailer 2 [HD] | In Theaters January 24, 2020",
+        "site": "youtube",
+        "type": "TRAILER"
+      },
+      {
+        "url": "https://www.youtube.com/embed/2B0RpUGss2c",
+        "name": "The Gentlemen | Official Trailer [HD] | Coming Soon to Theaters",
+        "site": "youtube",
+        "type": "TRAILER"
+      }
+    ]
+  }
+}

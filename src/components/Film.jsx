@@ -21,6 +21,13 @@ const Film = (item) => {
     return !!prop ? `${prop}` : '';
   };
 
+  const join = (...args) => {
+    const a = args.filter((item) => {
+      return !!item;
+    });
+    return a;
+  };
+
   return (
     <div className={styles.film}>
       <span className={styles.numer}>{index + 1}</span>
@@ -45,12 +52,10 @@ const Film = (item) => {
           КП<strong> {rating.kp.toFixed(2)}</strong>
         </p>
         {/* вот тут проверем есть ли другой рейтенх */}
-        {rating.imdb ? (
+        {!!rating.imdb && (
           <p>
             IMDB<strong> {rating.imdb.toFixed(2)}</strong>
           </p>
-        ) : (
-          ''
         )}
       </div>
     </div>

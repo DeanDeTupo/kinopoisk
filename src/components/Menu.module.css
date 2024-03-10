@@ -1,0 +1,16 @@
+.nav {
+  margin: 5px;
+  border-bottom: 2px solid lightcoral;
+}
+.nav a {
+  margin: 10px;
+  color: whitesmoke;
+}
+.nav a:link {
+  color: unset;
+  text-decoration: none;
+}
+
+.nav a:visited {
+  color: unset;
+}
