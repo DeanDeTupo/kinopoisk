@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 import { options } from '../data/request';
 const SingleFilmPage = () => {
   const { filmId } = useParams(); //вернёт просто айдишник фильма
-  console.log(options);
+  // console.log(options);
   const url = 'https://api.kinopoisk.dev/v1.4/movie/' + filmId;
-  console.log(url);
+  // console.log(url);
 
   // делаем запрос к API кенопоика, для получения данных
   const [filmData, setFilmData] = useState(null);

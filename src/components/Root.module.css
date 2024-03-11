@@ -1,0 +1,30 @@
+.root {
+  font-size: 16px;
+  margin: 10px 20px;
+  cursor: pointer;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: unset;
+  color: aliceblue;
+  /* transition: background-color ease 100ms; */
+}
+
+.root:hover {
+  background-color: rgba(245, 245, 245, 0.3);
+}
+.activeRoot {
+  appearance: none;
+  font-size: 1rem;
+  margin: 10px 20px;
+  cursor: pointer;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  color: rgb(18, 44, 67);
+}

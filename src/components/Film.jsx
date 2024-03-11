@@ -8,11 +8,14 @@ const Film = (item) => {
     name,
     movieLength,
     shortDescription,
-    index,
     poster,
     alternativeName,
     countries,
     genres,
+    index,
+    limit,
+    page,
+    listIndex,
     ...rest
   } = item;
 
@@ -30,7 +33,8 @@ const Film = (item) => {
 
   return (
     <div className={styles.film}>
-      <span className={styles.numer}>{index + 1}</span>
+      {/* вот тут блять мы выводим номер из нашего топ-100 */}
+      <span className={styles.numer}>{(page - 1) * limit + listIndex + 1}</span>
       <img className={styles.poster} src={poster.url}></img>
       <div className={styles.desc}>
         <h3>{name}</h3>
