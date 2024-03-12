@@ -3,7 +3,7 @@ import Film from './Film';
 import data from '../data/test.json';
 import { Link, useSearchParams } from 'react-router-dom';
 import styles from './Films.module.css';
-import Root from './Root';
+import Root from './Page/Root';
 
 const filmData = data.docs; //список лучших фильмов
 const pageLimit = 20; // можно менять количество показываемых филемов

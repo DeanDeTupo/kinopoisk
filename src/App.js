@@ -3,7 +3,7 @@ import Films from './components/Films';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import SimpleLayout from './layouts/SimpleLayout';
-import SingleFilmPage from './components/SingleFilmPage';
+import SingleFilmPage from './components/Page/SingleFilmPage';
 
 function App() {
   return (
