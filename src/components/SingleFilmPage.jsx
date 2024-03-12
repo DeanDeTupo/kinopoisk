@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { options } from '../data/request';
+import styles from './SingleFilmPage.module.css';
+
 const SingleFilmPage = () => {
   const { filmId } = useParams(); //вернёт просто айдишник фильма
   // console.log(options);
@@ -20,10 +22,11 @@ const SingleFilmPage = () => {
         setIsLoading(false);
       } catch (e) {
         setError(e);
+        console.log(e);
       }
     })();
-  }, []);
-  // console.log(filmData);
+  });
+  console.log(filmData);
 
   // если поймали ошибку при запросе
   if (error) {
@@ -34,6 +37,15 @@ const SingleFilmPage = () => {
       </>
     );
   }
+  // если израсходован лимит
+  if (filmData.error === 'Forbidden') {
+    return (
+      <>
+        <h1>failed</h1>
+        <h3>Error: {filmData.message}</h3>
+      </>
+    );
+  }
 
   return (
     <>
@@ -41,9 +53,14 @@ const SingleFilmPage = () => {
         <h1>Загрузка</h1>
       ) : (
         <>
-          <small>фильм загружен</small>
+          <Link to="..">
+            <div className={styles.back}></div>
+          </Link>
           <h1>{filmData.name}</h1>
-          <p>{filmData.year}</p>
+          <div>
+            <p>{filmData.year}</p>
+            <p>{filmData.genres.map((_) => _.name).join(', ')}</p>
+          </div>
           <img
             src={filmData.logo.url}
             alt=""
