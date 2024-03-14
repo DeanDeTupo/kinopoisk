@@ -34,21 +34,39 @@
   font-size: 12px;
   width: 500px;
   display: flex;
-  /* justify-content: space-between; */
   margin: 10px;
   border-radius: 5px;
   background-color: rgba(240, 248, 255, 0.198);
   height: 1.5rem;
   /* overflow: hidden; */
   gap: 50px;
+  padding: 0 2px;
 }
 
 .row .leftColumn {
   min-width: 150px;
   /* margin-right: 35px; */
   overflow: unset;
+  text-align: left;
+  line-height: 1.5rem;
 }
 
 .row .rightColumn {
+  padding: 2px;
   overflow: hidden;
+  text-align: justify;
+}
+
+.footageCarousel {
+  display: flex;
+  height: 400px;
+  overflow-x: hidden;
+}
+
+.footageItems {
+  height: 100px;
+}
+
+.age {
+  border: 1px solid white;
 }

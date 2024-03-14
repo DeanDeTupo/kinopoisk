@@ -4,7 +4,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import SimpleLayout from './layouts/SimpleLayout';
 import SingleFilmPage from './components/Page/SingleFilmPage';
-
+import PageContent from './components/Page/PageContent';
+import recommend from './data/recommendation.json';
+import footage from './data/demo/demoFootage.json';
+console.log('---------------', recommend);
 function App() {
   return (
     <BrowserRouter>
@@ -24,6 +27,9 @@ function App() {
               <Route index={true} element={<Films />}></Route>
               <Route path=":filmId" element={<SingleFilmPage />}></Route>
             </Route>
+            <Route path="demo" element={<SingleFilmPage isDemo={true} />} />
+            <Route path="recommend" element={<PageContent {...recommend} />} />
+
             <Route path="*" element={<h1>404... Такого тут нет</h1>} />
           </Route>
         </Routes>

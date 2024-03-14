@@ -1,0 +1,460 @@
+{
+  "lists": [],
+  "id": 373314,
+  "externalId": {
+    "imdb": "tt1003080",
+    "tmdb": 132030
+  },
+  "name": "Зелёный слоник",
+  "alternativeName": null,
+  "enName": null,
+  "names": [
+    {
+      "name": "Зелёный слоник",
+      "language": "RU",
+      "type": "Russian title on kinopoisk"
+    },
+    {
+      "name": "Zelyonyy slonik",
+      "language": "RU",
+      "type": null
+    },
+    {
+      "name": "Green Elephant",
+      "language": "US",
+      "type": null
+    }
+  ],
+  "type": "movie",
+  "typeNumber": 1,
+  "year": 1999,
+  "description": "Два младших офицера, сидя в одной камере на гауптвахте, вынуждены решать острые социальные и психологические вопросы в небольшом пространстве.",
+  "shortDescription": null,
+  "slogan": null,
+  "status": null,
+  "rating": {
+    "kp": 5.599,
+    "imdb": 5.3,
+    "filmCritics": 0,
+    "russianFilmCritics": 0,
+    "await": null
+  },
+  "votes": {
+    "kp": 106940,
+    "imdb": 3029,
+    "filmCritics": 0,
+    "russianFilmCritics": 0,
+    "await": 0
+  },
+  "movieLength": 86,
+  "totalSeriesLength": null,
+  "seriesLength": null,
+  "ratingMpaa": null,
+  "ageRating": 18,
+  "poster": {
+    "url": "https://image.openmoviedb.com/kinopoisk-images/1600647/acb20d4a-57e2-4ac2-8c89-e550958d65a1/orig",
+    "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1600647/acb20d4a-57e2-4ac2-8c89-e550958d65a1/x1000"
+  },
+  "backdrop": {
+    "url": "https://image.openmoviedb.com/tmdb-images/original/30VBE7zNOataTH7qSGeKi7usUHz.jpg",
+    "previewUrl": "https://image.openmoviedb.com/tmdb-images/w500/30VBE7zNOataTH7qSGeKi7usUHz.jpg"
+  },
+  "genres": [
+    {
+      "name": "ужасы"
+    },
+    {
+      "name": "триллер"
+    }
+  ],
+  "countries": [
+    {
+      "name": "Россия"
+    }
+  ],
+  "budget": {},
+  "fees": {
+    "world": {},
+    "russia": {},
+    "usa": {}
+  },
+  "premiere": {},
+  "ticketsOnSale": false,
+  "sequelsAndPrequels": [
+    {
+      "id": 1115020,
+      "name": "Пресловутое поколение: Зелёный слоник 2",
+      "alternativeName": null,
+      "enName": null,
+      "type": "movie",
+      "poster": {
+        "url": "https://image.openmoviedb.com/kinopoisk-images/1898899/56a066a4-84fd-49c1-94c8-17fe7d4b9d8d/orig",
+        "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1898899/56a066a4-84fd-49c1-94c8-17fe7d4b9d8d/x1000"
+      },
+      "rating": {
+        "kp": 0,
+        "imdb": 6.7,
+        "filmCritics": 0,
+        "russianFilmCritics": 0,
+        "await": 90.87
+      },
+      "year": 2023
+    }
+  ],
+  "watchability": {
+    "items": []
+  },
+  "top10": null,
+  "top250": null,
+  "isSeries": false,
+  "audience": [],
+  "deletedAt": null,
+  "facts": [
+    {
+      "value": "Зелёным слоником называют противогаз ГП-4у.",
+      "type": "FACT",
+      "spoiler": false
+    },
+    {
+      "value": "Фильм снят на любительскую киноплёнку.",
+      "type": "FACT",
+      "spoiler": false
+    },
+    {
+      "value": "Актёры снимались бесплатно.",
+      "type": "FACT",
+      "spoiler": false
+    },
+    {
+      "value": "В мае 2022 года Октябрьский районный суд города Санкт-Петербурга запретил распространение фильма на территории Российской Федерации, сочтя, что он провоцирует навязчивые воспоминания и переживания.",
+      "type": "FACT",
+      "spoiler": false
+    },
+    {
+      "value": "Большое количество сцен и фраз из фильма с участием персонажа <a href=\"/name/977976/\" class=\"all\">Пахомова</a> стали интернет-мемами, были положены в основу веб-комиксов, фотожаб и юмористических роликов, публикуемых на YouTube, а фраза из фильма &#171;Братишка! Я тебе покушать принёс&#187; получила определённую известность.",
+      "type": "FACT",
+      "spoiler": true
+    },
+    {
+      "value": "В финальных сценах использовалась свиная кровь.",
+      "type": "FACT",
+      "spoiler": true
+    },
+    {
+      "value": "<a href=\"/name/558099/\" class=\"all\">Владимир Епифанцев</a> добровольно согласился набрать в рот тухлой крови ради эффектного кадра.",
+      "type": "FACT",
+      "spoiler": true
+    },
+    {
+      "value": "В момент, когда <a href=\"/name/977976/\" class=\"all\">Сергей Пахомов</a> орёт, держась за ноги мёртвого <a href=\"/name/558099/\" class=\"all\">Владимира Епифанцева</a> и глядя вверх, слышен орган — играет трек группы <a href=\"/name/1063858/\" class=\"all\">Iron Butterfly</a>. Взлетают птицы на красном фоне — кадры из фильма &#171;<a href=\"/film/43997/\" class=\"all\">Сто дней до приказа</a>&#187;.",
+      "type": "FACT",
+      "spoiler": true
+    },
+    {
+      "value": "В финальных титрах допущена грамматическая ошибка: «костюмы предоставлеННы Александром Малышевым».",
+      "type": "BLOOPER",
+      "spoiler": true
+    }
+  ],
+  "persons": [
+    {
+      "id": 558099,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_558099.jpg",
+      "name": "Владимир Епифанцев",
+      "enName": null,
+      "description": "Братишка",
+      "profession": "актеры",
+      "enProfession": "actor"
+    },
+    {
+      "id": 977976,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_977976.jpg",
+      "name": "Сергей Пахомов",
+      "enName": null,
+      "description": "Поехавший",
+      "profession": "актеры",
+      "enProfession": "actor"
+    },
+    {
+      "id": 1420785,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1420785.jpg",
+      "name": "Александр Маслаев",
+      "enName": null,
+      "description": null,
+      "profession": "актеры",
+      "enProfession": "actor"
+    },
+    {
+      "id": 1420786,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1420786.jpg",
+      "name": "Анатолий Осмоловский",
+      "enName": null,
+      "description": null,
+      "profession": "актеры",
+      "enProfession": "actor"
+    },
+    {
+      "id": 1420784,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1420784.jpg",
+      "name": "Светлана Баскова",
+      "enName": null,
+      "description": null,
+      "profession": "режиссеры",
+      "enProfession": "director"
+    },
+    {
+      "id": 1420784,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1420784.jpg",
+      "name": "Светлана Баскова",
+      "enName": null,
+      "description": null,
+      "profession": "операторы",
+      "enProfession": "operator"
+    },
+    {
+      "id": 1420787,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1420787.jpg",
+      "name": "Олег Мавроматти",
+      "enName": null,
+      "description": null,
+      "profession": "продюсеры",
+      "enProfession": "producer"
+    },
+    {
+      "id": 1420784,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1420784.jpg",
+      "name": "Светлана Баскова",
+      "enName": null,
+      "description": null,
+      "profession": "продюсеры",
+      "enProfession": "producer"
+    },
+    {
+      "id": 2087110,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_2087110.jpg",
+      "name": "Владимир Зубков",
+      "enName": null,
+      "description": null,
+      "profession": "продюсеры",
+      "enProfession": "producer"
+    },
+    {
+      "id": 1420787,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1420787.jpg",
+      "name": "Олег Мавроматти",
+      "enName": null,
+      "description": null,
+      "profession": "актеры дубляжа",
+      "enProfession": "voice_actor"
+    },
+    {
+      "id": 1420784,
+      "photo": "https://st.kp.yandex.net/images/actor_iphone/iphone360_1420784.jpg",
+      "name": "Светлана Баскова",
+      "enName": null,
+      "description": null,
+      "profession": "редакторы",
+      "enProfession": "writer"
+    }
+  ],
+  "spokenLanguages": [],
+  "seasonsInfo": [],
+  "collections": [],
+  "productionCompanies": [],
+  "similarMovies": [
+    {
+      "id": 1114927,
+      "name": "Маяк",
+      "alternativeName": "The Lighthouse",
+      "enName": null,
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/ece234ff-ad2c-411a-99d6-233e248eddda/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/ece234ff-ad2c-411a-99d6-233e248eddda/x1000"
+      },
+      "rating": {
+        "kp": 7.143,
+        "imdb": 7.4,
+        "filmCritics": 8,
+        "russianFilmCritics": 92.8571,
+        "await": null
+      },
+      "year": 2019
+    },
+    {
+      "id": 1345717,
+      "name": "Непосредственно Каха!",
+      "alternativeName": null,
+      "enName": null,
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/a5ebb9ae-7ab4-44e9-9409-1544a6ef7733/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/a5ebb9ae-7ab4-44e9-9409-1544a6ef7733/x1000"
+      },
+      "rating": {
+        "kp": 4.417,
+        "imdb": 1.6,
+        "filmCritics": 0,
+        "russianFilmCritics": 60,
+        "await": null
+      },
+      "year": 2020
+    },
+    {
+      "id": 453284,
+      "name": "Пять бутылок водки",
+      "alternativeName": null,
+      "enName": null,
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/3dbf1eff-83f0-4d96-998b-8126c4398c72/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/3dbf1eff-83f0-4d96-998b-8126c4398c72/x1000"
+      },
+      "rating": {
+        "kp": 6.065,
+        "imdb": 6,
+        "filmCritics": 0,
+        "russianFilmCritics": 0,
+        "await": null
+      },
+      "year": 2002
+    },
+    {
+      "id": 415379,
+      "name": "Стоик: Выжить любой ценой",
+      "alternativeName": "Stoic",
+      "enName": null,
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/f39ca385-41d8-4e65-9fa6-db359f7f4661/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/f39ca385-41d8-4e65-9fa6-db359f7f4661/x1000"
+      },
+      "rating": {
+        "kp": 5.933,
+        "imdb": 5.1,
+        "filmCritics": 0,
+        "russianFilmCritics": 0,
+        "await": null
+      },
+      "year": 2009
+    },
+    {
+      "id": 22292,
+      "name": "Розовые фламинго",
+      "alternativeName": "Pink Flamingos",
+      "enName": null,
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/be5f2fd8-0c15-448d-aaf2-616796e5e24c/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/be5f2fd8-0c15-448d-aaf2-616796e5e24c/x1000"
+      },
+      "rating": {
+        "kp": 5.701,
+        "imdb": 6,
+        "filmCritics": 7.3,
+        "russianFilmCritics": 0,
+        "await": null
+      },
+      "year": 1972
+    },
+    {
+      "id": 424692,
+      "name": "Сербский фильм",
+      "alternativeName": "Srpski film",
+      "enName": null,
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/6176cbbf-6b51-43d3-907e-293d587a636b/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/6176cbbf-6b51-43d3-907e-293d587a636b/x1000"
+      },
+      "rating": {
+        "kp": 5.05,
+        "imdb": 5,
+        "filmCritics": 5.2,
+        "russianFilmCritics": 0,
+        "await": null
+      },
+      "year": 2010
+    },
+    {
+      "id": 401779,
+      "name": "Кокки — бегущий доктор",
+      "alternativeName": null,
+      "enName": null,
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/516cd5b0-e090-4b37-918c-6763b3a4373f/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/516cd5b0-e090-4b37-918c-6763b3a4373f/x1000"
+      },
+      "rating": {
+        "kp": 5.672,
+        "imdb": 0,
+        "filmCritics": 0,
+        "russianFilmCritics": 0,
+        "await": null
+      },
+      "year": 1998
+    },
+    {
+      "id": 420424,
+      "name": "Выблядки",
+      "alternativeName": null,
+      "enName": null,
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/70a13911-6b00-4f78-ba53-51928c401324/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/70a13911-6b00-4f78-ba53-51928c401324/x1000"
+      },
+      "rating": {
+        "kp": 5.069,
+        "imdb": 3.9,
+        "filmCritics": 0,
+        "russianFilmCritics": 0,
+        "await": null
+      },
+      "year": 2000
+    },
+    {
+      "id": 39864,
+      "name": "Сало, или 120 дней Содома",
+      "alternativeName": "Salò o le 120 giornate di Sodoma",
+      "enName": null,
+      "type": "movie",
+      "poster": {
+        "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/4ded5de5-901c-4a05-b222-ee97c99d1008/orig",
+        "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/4ded5de5-901c-4a05-b222-ee97c99d1008/x1000"
+      },
+      "rating": {
+        "kp": 5.433,
+        "imdb": 5.8,
+        "filmCritics": 6.7,
+        "russianFilmCritics": 0,
+        "await": null
+      },
+      "year": 1975
+    }
+  ],
+  "releaseYears": [],
+  "createdAt": "2023-07-11T19:07:39.544Z",
+  "updatedAt": "2024-03-14T01:00:20.615Z",
+  "logo": {
+    "url": null
+  },
+  "networks": null,
+  "videos": {
+    "trailers": [
+      {
+        "url": "https://www.youtube.com/embed/QnPUVxYt81M",
+        "name": "The Green Elephant Trailer.",
+        "site": "youtube",
+        "type": "TRAILER"
+      },
+      {
+        "url": "https://www.youtube.com/embed/QnPUVxYt81M",
+        "name": "The Green Elephant Trailer.",
+        "site": "youtube",
+        "type": "TRAILER"
+      }
+    ]
+  }
+}
