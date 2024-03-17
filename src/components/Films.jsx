@@ -25,6 +25,7 @@ const Films = () => {
     setPage(value);
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   }
+
   // меняем метод сортировки списка фильмов
   function changeSortParam(event) {
     // event.preventDefault();
@@ -68,6 +69,12 @@ const Films = () => {
           <option value="year">по дате выхода</option>
         </select>
       </form>
+      <Root
+        page={page}
+        pageLimit={pageLimit}
+        totalCount={filmsToShow.length}
+        changePage={changePage}
+      />
       {filmsToRender.map((item, index) => {
         // возвращаем хуеву гору ссылок
         // console.log(item);

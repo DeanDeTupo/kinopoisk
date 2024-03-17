@@ -12,12 +12,17 @@
 .content {
   display: flex;
   flex-direction: row;
+  margin: 10px;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+}
+
+.trailer {
+  align-self: center;
 }
 
 .gap {
@@ -55,6 +60,14 @@
   padding: 2px;
   overflow: hidden;
   text-align: justify;
+}
+
+.column > h1,
+.column > p {
+  display: block;
+  text-align: left;
+  align-self: flex-start;
+  margin: 0 0 10px 10px;
 }
 
 .footageCarousel {

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './PageContent.module.css';
 import { RiArrowLeftLine } from 'react-icons/ri';
 import InfoRow from './InfoRow';
+import Slider from './Slider';
 // eslint-disable-next-line
 const timeFormat = (length) => {
   let hour = String(parseInt(length / 60)).padStart(2, '0');
@@ -45,7 +46,6 @@ const PageContent = (content) => {
     name,
     year,
     genres,
-    logo,
     poster,
     description,
     shortDescription,
@@ -55,7 +55,7 @@ const PageContent = (content) => {
     premiere,
     ageRating,
     footage,
-    ...filmData
+    videos,
   } = content;
 
   console.log('внутри pfge content', footage);
@@ -84,13 +84,7 @@ const PageContent = (content) => {
       <Link to="..">
         <RiArrowLeftLine className={styles.back} />
       </Link>
-      <h1>{filmData.name}</h1>
 
-      <img
-        src={logo.url}
-        alt=""
-        style={{ objectFit: 'contain', width: '100%', height: '200px' }}
-      />
       {/* ---------------тута начинается КОНТЕНТ */}
       <div className={styles.content}>
         {/* ____столбик ЛЕВЫЙ */}
@@ -101,9 +95,23 @@ const PageContent = (content) => {
             style={{
               display: 'block',
               textAlign: 'center',
-              height: '300px',
+              width: '300px',
+              // height: '400px',
+              objectFit: 'contain',
             }}
           />
+          <h3>Трейлер</h3>
+          <iframe
+            title="trailer"
+            className={styles.trailer}
+            src={videos.trailers[0].url}
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            width="300"
+          >
+            <p>Не поддерживаем видео</p>
+          </iframe>
         </div>
         {/* ---------------------------------------------------- */}
         <div className={styles.gap}></div>
@@ -112,7 +120,7 @@ const PageContent = (content) => {
           <h1>
             {name.toUpperCase()}({year})
           </h1>
-          <h3>{shortDescription}</h3>
+          <p>{shortDescription}</p>
 
           <InfoRow title="Жанр:" content={genresProp} />
           <InfoRow title="Год производства" content={year} />
@@ -137,29 +145,13 @@ const PageContent = (content) => {
               />
             );
           })}
-          <div className={styles.row}>
+          <div className={styles}>
             <p>Описание: {description}</p>
           </div>
           {/* ниже кадры из фильма */}
-          <div className={styles.footageCarousel}>
-            <div className={styles.footageItems}>
-              {!!footage &&
-                footage.docs
-                  .filter((item) => {
-                    return item.type === 'still';
-                  })
-                  .slice()
-                  .map((item) => {
-                    return (
-                      <img src={item.url} className={styles.footageItems}></img>
-                    );
-                  })}
-            </div>
-          </div>
+          <Slider content={footage}></Slider>
         </div>
       </div>
-
-      <div className={styles.description}></div>
     </>
   );
 };
