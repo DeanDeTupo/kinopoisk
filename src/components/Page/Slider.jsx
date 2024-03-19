@@ -8,9 +8,9 @@ const Slider = ({ content: footage }) => {
 
   return (
     <div className={styles.slider}>
+      <RiArrowLeftLine className={`${styles.btn} ${styles.btnLeft}`} />
+      <RiArrowLeftLine className={`${styles.btn} ${styles.btnRight}`} />
       <div className={styles.sliderContainer}>
-        <RiArrowLeftLine className={`${styles.btn} ${styles.btnLeft}`} />
-        <RiArrowLeftLine className={`${styles.btn} ${styles.btnRight}`} />
         <div className={styles.sliderLine}>
           {!!footage &&
             footage.docs

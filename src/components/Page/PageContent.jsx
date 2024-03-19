@@ -4,7 +4,7 @@ import styles from './PageContent.module.css';
 import { RiArrowLeftLine } from 'react-icons/ri';
 import InfoRow from './InfoRow';
 import Slider from './Slider';
-// eslint-disable-next-line
+
 const timeFormat = (length) => {
   let hour = String(parseInt(length / 60)).padStart(2, '0');
   let min = String(length % 60).padStart(2, '0');
@@ -56,6 +56,7 @@ const PageContent = (content) => {
     ageRating,
     footage,
     videos,
+    isSeries,
   } = content;
 
   console.log('внутри pfge content', footage);
@@ -72,11 +73,7 @@ const PageContent = (content) => {
   const movieLengthProp = timeFormat(movieLength);
   const countriesProp = countries.map((item) => item.name).join(', ');
   const premiereProp = parseDate(premiere.world);
-  // console.log('00000', Object.keys(premiere).length);
-  // console.log('11111', premiere.length);
   const ageRatingProp = ageRating + '+';
-  // const directorProp = personsFromProfession(persons, 'director');
-  // const actorProp = personsFromProfession(persons, 'actor');
 
   return (
     <>
@@ -100,18 +97,22 @@ const PageContent = (content) => {
               objectFit: 'contain',
             }}
           />
-          <h3>Трейлер</h3>
-          <iframe
-            title="trailer"
-            className={styles.trailer}
-            src={videos.trailers[0].url}
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            width="300"
-          >
-            <p>Не поддерживаем видео</p>
-          </iframe>
+          {!!videos && !!videos.trailers.length && (
+            <>
+              <h3>Трейлер</h3>
+              <iframe
+                title="trailer"
+                className={styles.trailer}
+                src={videos.trailers[0].url}
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                width="300"
+              >
+                <p>Не поддерживаем видео</p>
+              </iframe>
+            </>
+          )}
         </div>
         {/* ---------------------------------------------------- */}
         <div className={styles.gap}></div>
@@ -125,7 +126,9 @@ const PageContent = (content) => {
           <InfoRow title="Жанр:" content={genresProp} />
           <InfoRow title="Год производства" content={year} />
           <InfoRow title="Страна" content={countriesProp} />
-          <InfoRow title="Длительность" content={movieLengthProp} />
+          {!isSeries && (
+            <InfoRow title="Длительность" content={movieLengthProp} />
+          )}
           {/* премьеры может и не быть оказываетсо */}
           {!premiereProp ? (
             ''

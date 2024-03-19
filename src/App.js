@@ -6,8 +6,6 @@ import SimpleLayout from './layouts/SimpleLayout';
 import SingleFilmPage from './components/Page/SingleFilmPage';
 import PageContent from './components/Page/PageContent';
 import recommend from './data/recommendation.json';
-import footage from './data/demo/demoFootage.json';
-console.log('---------------', recommend);
 function App() {
   return (
     <BrowserRouter>
