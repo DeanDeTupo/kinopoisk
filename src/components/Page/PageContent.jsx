@@ -73,7 +73,7 @@ const PageContent = (content) => {
   const movieLengthProp = timeFormat(movieLength);
   const countriesProp = countries.map((item) => item.name).join(', ');
   const premiereProp = parseDate(premiere.world);
-  const ageRatingProp = ageRating + '+';
+  const ageRatingProp = +ageRating + '+';
 
   return (
     <>
@@ -119,7 +119,14 @@ const PageContent = (content) => {
         {/* _____столбик правый */}
         <div className={styles.column}>
           <h1>
-            {name.toUpperCase()}({year})
+            {name.toUpperCase()}
+            {isSeries ? (
+              <>
+                <br></br>(СЕРИАЛ {year})
+              </>
+            ) : (
+              `(${year})`
+            )}
           </h1>
           <p>{shortDescription}</p>
 

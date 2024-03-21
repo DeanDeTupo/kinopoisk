@@ -16,6 +16,7 @@ const Film = (item) => {
     limit,
     page,
     listIndex,
+    isSeries,
     ...rest
   } = item;
 
@@ -37,7 +38,14 @@ const Film = (item) => {
       <span className={styles.numer}>{(page - 1) * limit + listIndex + 1}</span>
       <img className={styles.poster} src={poster.url}></img>
       <div className={styles.desc}>
-        <h3>{name}</h3>
+        <div className={styles.title}>
+          <h3>{name}</h3>
+          {isSeries && (
+            <div className={styles.seriesTitle}>
+              <h4>Cериал</h4>
+            </div>
+          )}
+        </div>
         <div className={styles.mainInfo}>
           <p>
             {!!alternativeName && `${alternativeName}, `} {year}
@@ -49,6 +57,7 @@ const Film = (item) => {
           {countries[0].name} &#183; {genres[0].name}
         </p>
       </div>
+
       <div className={styles.rating}>
         <h5>Рейтинг</h5>
 

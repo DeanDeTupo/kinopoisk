@@ -6,11 +6,6 @@ import styles from './Films.module.css';
 import queryString from 'query-string';
 import Root from './Page/Root';
 
-const OPTIONS = new Map([
-  ['', '-'],
-  ['rating', 'по рейтингу'],
-  ['year', 'по дате выхода'],
-]);
 const pageLimit = 20; // можно менять количество показываемых филемов
 const filmData = data.docs; //список лучших фильмов
 
@@ -42,21 +37,23 @@ const Films = () => {
   // eslint-disable-next-line
   const [searchParams, setSearchParams] = useSearchParams('');
   const [page, setPage] = useState(1); //номер страницы
+  // eslint-disable-next-line
   const [sortKey, setSortKey] = useState(''); //ключ сортировки
+  const [isSeries, setIsSeries] = useState('');
 
   //отслеживаем изменение URL, бля, а почему это работает? я же сильнее сломать хотел...
   useEffect(() => {
-    !query.page ? setPage(1) : setPage(query.page);
+    const { page, sort, isSeries } = query;
+    !page ? setPage(1) : setPage(page);
     // setPage(query.page);
-    !query.page ? setSortKey('') : setSortKey(query.sort);
+    !sort ? setSortKey('') : setSortKey(sort);
+    !isSeries ? setIsSeries('') : setSortKey(isSeries);
 
     // setSearchParams({ page: page, sort: sortKey });
   }, [query]);
 
   //меняем номер страницы
   function changePage(value) {
-    setPage(value);
-    // setSearchParams({ ...query, page: value });
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     const params = {};
     if (value > 1) params.page = value;
@@ -69,13 +66,14 @@ const Films = () => {
   function changeSortParam(event) {
     event.preventDefault();
     const method = event.target.value;
-    setSortKey(method);
-    setPage(1);
     const params = {};
-
     if (method) params.sort = method;
-
     setSearchParams(params);
+  }
+
+  function changeIncludeSeries(event) {
+    event.preventDefault();
+    console.log(query);
   }
 
   //сортируем фильмы
@@ -85,7 +83,7 @@ const Films = () => {
 
   return (
     <div>
-      <h2>Топ-100 лучших фильмов 2015-2024</h2>
+      <h2>Топ-100 лучших фильмов и сериалов 2015-2024</h2>
       <form>
         <label>Сортировать </label>
 
@@ -97,6 +95,17 @@ const Films = () => {
           <option value="">по порядку</option>
           <option value="rating">по рейтингу</option>
           <option value="year">по дате выхода</option>
+        </select>
+        <label htmlFor="series">Искать</label>
+        <select
+          name="sort"
+          id="series"
+          value={query.sort}
+          onChange={(e) => changeIncludeSeries(e)}
+        >
+          <option value="">фильмы и сериалы</option>
+          <option value={false}>фильмы</option>
+          <option value={true}>сериалы</option>
         </select>
       </form>
       <Root
