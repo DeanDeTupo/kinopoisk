@@ -5,16 +5,15 @@ import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import styles from './Films.module.css';
 import queryString from 'query-string';
 import Root from './Page/Root';
+import { options } from '../data/request';
 
 const pageLimit = 20; // можно менять количество показываемых филемов
-const filmData = data.docs; //список лучших фильмов
+const DemoFilmData = data.docs; //список лучших фильмов
 
 const getPartOfList = (list, _page, count) => {
   const page = !_page ? 1 : parseInt(_page);
-  console.log('страница БЛЯТЬ ', page);
   let start = (page - 1) * count;
   let end = start + count;
-  console.log('отобразить на странице', list.slice(start, end));
   return list.slice(start, end);
 };
 
@@ -34,22 +33,33 @@ const Films = () => {
   const location = useLocation(); //get href
   const query = queryString.parse(location.search); //parsim search
 
+  const seriesState = query.isSeries;
   // eslint-disable-next-line
   const [searchParams, setSearchParams] = useSearchParams('');
   const [page, setPage] = useState(1); //номер страницы
   // eslint-disable-next-line
   const [sortKey, setSortKey] = useState(''); //ключ сортировки
   const [isSeries, setIsSeries] = useState('');
+  const [filmData, setFilmData] = useState('');
 
-  //отслеживаем изменение URL, бля, а почему это работает? я же сильнее сломать хотел...
+  useEffect(() => {
+    const URL = `https://api.kinopoisk.dev/v1.4/movie?page=1&limit=100&year=2015-2024&rating.kp=8-10${
+      query.isSeries ? '&isSeries=' + query.isSeries : ''
+    }`;
+    // seriesParam = (isSeries in )
+    console.log(URL);
+    (async () => {
+      const response = await fetch(URL, options);
+      const data = await response.json();
+      setFilmData(data.docs);
+    })();
+  }, [seriesState]);
+
   useEffect(() => {
     const { page, sort, isSeries } = query;
     !page ? setPage(1) : setPage(page);
-    // setPage(query.page);
-    !sort ? setSortKey('') : setSortKey(sort);
-    !isSeries ? setIsSeries('') : setSortKey(isSeries);
-
-    // setSearchParams({ page: page, sort: sortKey });
+    // !sort ? setSortKey('') : setSortKey(sort);
+    // !isSeries ? setIsSeries('') : setSortKey(isSeries);
   }, [query]);
 
   //меняем номер страницы
@@ -73,6 +83,13 @@ const Films = () => {
 
   function changeIncludeSeries(event) {
     event.preventDefault();
+    const params = {};
+    const seriesValue = event.target.value;
+    console.log('пизда', seriesValue === null);
+
+    if (query.sort) params.sort = query.sort;
+    if (seriesValue) params.isSeries = seriesValue;
+    setSearchParams(params);
     console.log(query);
   }
 
@@ -100,12 +117,12 @@ const Films = () => {
         <select
           name="sort"
           id="series"
-          value={query.sort}
+          value={query.isSeries}
           onChange={(e) => changeIncludeSeries(e)}
         >
           <option value="">фильмы и сериалы</option>
-          <option value={false}>фильмы</option>
-          <option value={true}>сериалы</option>
+          <option value="false">фильмы</option>
+          <option value="true">сериалы</option>
         </select>
       </form>
       <Root
