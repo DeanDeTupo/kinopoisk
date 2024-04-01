@@ -47,11 +47,12 @@ const SingleFilmPage = ({ isDemo, film }) => {
   // если поймали ошибку при запросе
   if (error || isDemo) {
     return (
-      <>
+      <div>
         {!!isDemo ? (
           <>
             <h1>Демонстрационная версия</h1>
             <h4>Демо-контент:</h4>
+            <hr></hr>
           </>
         ) : (
           <>
@@ -60,12 +61,12 @@ const SingleFilmPage = ({ isDemo, film }) => {
               Достигнут предел суточных запросов, пожалуйста, {error.message}
             </h3>
             <h4>Демо-контент:</h4>
+            <hr></hr>
           </>
         )}
 
-        <hr></hr>
         <PageContent {...demoData} footage={footage} />
-      </>
+      </div>
     );
   }
 

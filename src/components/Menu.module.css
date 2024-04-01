@@ -1,6 +1,8 @@
 .nav {
   margin: 5px;
   border-bottom: 2px solid lightcoral;
+  display: flex;
+  justify-content: center;
 }
 .nav a {
   margin: 10px;

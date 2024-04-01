@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: whitesmoke;
+  color: rgb(18, 44, 67); */
+}
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}

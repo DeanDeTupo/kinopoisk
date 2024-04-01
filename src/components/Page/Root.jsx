@@ -17,7 +17,7 @@ const Root = ({ page, pageLimit, totalCount, changePage }) => {
             key={item}
             type="button"
             className={+page === item ? styles.activeRoot : styles.root}
-            onClick={(event) => changePage(event.target.innerText)}
+            onClick={(event) => changePage(event)}
           >
             {item}
           </button>

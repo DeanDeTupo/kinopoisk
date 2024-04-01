@@ -6,6 +6,7 @@ import SimpleLayout from './layouts/SimpleLayout';
 import SingleFilmPage from './components/Page/SingleFilmPage';
 import PageContent from './components/Page/PageContent';
 import recommend from './data/recommendation.json';
+import NotFound from './components/NotFound';
 function App() {
   return (
     <BrowserRouter>
@@ -27,8 +28,7 @@ function App() {
             </Route>
             <Route path="demo" element={<SingleFilmPage isDemo={true} />} />
             <Route path="recommend" element={<PageContent {...recommend} />} />
-
-            <Route path="*" element={<h1>404... Такого тут нет</h1>} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
         {/* <Films /> */}

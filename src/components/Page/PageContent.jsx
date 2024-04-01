@@ -4,6 +4,7 @@ import styles from './PageContent.module.css';
 import { RiArrowLeftLine } from 'react-icons/ri';
 import InfoRow from './InfoRow';
 import Slider from './Slider';
+import DemoSlider from '../Demo/DemoSlider';
 
 const timeFormat = (length) => {
   let hour = String(parseInt(length / 60)).padStart(2, '0');
@@ -13,7 +14,7 @@ const timeFormat = (length) => {
 const personsFromProfession = (personList, profession) => {
   const persons = personList
     .filter((item) => item.profession === profession)
-    .map((dir) => dir.name)
+    .map((dir) => (!!dir.name ? dir.name : dir.enName))
     .join(', ');
   if (!persons.length) return 'Нет';
   return persons;
@@ -55,6 +56,7 @@ const PageContent = (content) => {
     premiere,
     ageRating,
     footage,
+    id,
     videos,
     isSeries,
   } = content;
@@ -78,14 +80,14 @@ const PageContent = (content) => {
   return (
     <>
       {console.log(content)}
-      <Link to="..">
+      {/* <Link to="..">
         <RiArrowLeftLine className={styles.back} />
-      </Link>
+      </Link> */}
 
       {/* ---------------тута начинается КОНТЕНТ */}
       <div className={styles.content}>
         {/* ____столбик ЛЕВЫЙ */}
-        <div className={styles.column}>
+        <div className={styles.mainColumn}>
           <img
             src={poster.previewUrl}
             alt="poster"
@@ -103,7 +105,7 @@ const PageContent = (content) => {
               <iframe
                 title="trailer"
                 className={styles.trailer}
-                src={videos.trailers[0].url}
+                src={videos.trailers[1].url || videos.trailers[0].url}
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -117,7 +119,7 @@ const PageContent = (content) => {
         {/* ---------------------------------------------------- */}
         <div className={styles.gap}></div>
         {/* _____столбик правый */}
-        <div className={styles.column}>
+        <div className={`${styles.mainColumn} ${styles.mainColumnRight}`}>
           <h1>
             {name.toUpperCase()}
             {isSeries ? (
@@ -159,7 +161,11 @@ const PageContent = (content) => {
             <p>Описание: {description}</p>
           </div>
           {/* ниже кадры из фильма */}
-          <Slider content={footage}></Slider>
+          {!!footage ? (
+            <DemoSlider content={footage} />
+          ) : (
+            <Slider id={id}></Slider>
+          )}
         </div>
       </div>
     </>

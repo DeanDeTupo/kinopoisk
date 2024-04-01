@@ -5,6 +5,7 @@
   padding: 10px;
   border-radius: 15px;
   font-size: 16px;
+  position: relative;
 }
 
 .film:hover {
@@ -32,6 +33,7 @@
   /* justify-content: flex-end; */
   gap: 10px;
   margin-left: 20px;
+  margin-right: auto;
   text-align: start;
   width: 50%;
   background-color: initial;
@@ -51,6 +53,10 @@
 .secondInfo {
   font-size: 16px;
   justify-self: end;
+}
+
+.rating {
+  margin-right: 30px;
 }
 
 .rating p {

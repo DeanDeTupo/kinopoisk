@@ -36,7 +36,10 @@ const Film = (item) => {
     <div className={styles.film}>
       {/* вот тут блять мы выводим номер из нашего топ-100 */}
       <span className={styles.numer}>{(page - 1) * limit + listIndex + 1}</span>
-      <img className={styles.poster} src={poster.url}></img>
+      <img
+        className={styles.poster}
+        src={poster.previewURL || poster.url}
+      ></img>
       <div className={styles.desc}>
         <div className={styles.title}>
           <h3>{name}</h3>
@@ -54,7 +57,8 @@ const Film = (item) => {
           </p>
         </div>
         <p className={styles.secondInfo}>
-          {countries[0].name} &#183; {genres[0].name}
+          {!!countries.length && countries[0].name} &#183;{' '}
+          {!!genres[0].name && genres[0].name}
         </p>
       </div>
 

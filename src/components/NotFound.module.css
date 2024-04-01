@@ -1,0 +1,46 @@
+.notFoundPage {
+  display: flex;
+  justify-content: center;
+}
+.main {
+  text-align: left;
+  margin: 10px 50px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.emo p {
+  font-size: 10rem;
+  display: inline;
+}
+
+.link {
+  display: block;
+  color: rgb(159, 159, 159);
+  transition: all 200ms;
+}
+
+.link:hover {
+  color: whitesmoke;
+}
+
+.nav {
+  margin-top: 50px;
+}
+
+/* .nav {
+
+  .nav a {
+    margin: 10px;
+    color: whitesmoke;
+  }
+  .nav a:link {
+    color: unset;
+    text-decoration: none;
+  }
+  
+  .nav a:visited {
+    color: unset;
+  }
+   */

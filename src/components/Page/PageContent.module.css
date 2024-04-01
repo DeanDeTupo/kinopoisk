@@ -15,7 +15,7 @@
   margin: 10px;
 }
 
-.column {
+.mainColumn {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -31,15 +31,20 @@
   box-sizing: border-box;
 }
 
-.column p {
+.mainColumn p {
+  border-top: whitesmoke solid 1px;
   text-align: justify;
+}
+
+.mainColumnRight {
+  width: 600px;
 }
 
 .row {
   font-size: 12px;
-  width: 500px;
+  width: 100%;
   display: flex;
-  margin: 10px;
+  margin: 10px 0;
   border-radius: 5px;
   background-color: rgba(240, 248, 255, 0.198);
   height: 1.5rem;
@@ -57,9 +62,10 @@
 }
 
 .row .rightColumn {
-  padding: 2px;
+  /* padding: 2px; */
   overflow: hidden;
   text-align: justify;
+  line-height: 1.5rem;
 }
 
 .column > h1,
@@ -82,4 +88,7 @@
 
 .age {
   border: 1px solid white;
+  line-height: 1rem;
+  vertical-align: middle;
+  margin-top: 4px;
 }
