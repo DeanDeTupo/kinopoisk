@@ -42,7 +42,6 @@ const Films = () => {
   const query = queryString.parse(location.search); //parsim search
 
   const { isSeries: seriesState, ...queryParams } = query;
-  console.log('в адресной строке', query);
   // eslint-disable-next-line
   const [searchParams, setSearchParams] = useSearchParams('');
   const [page, setPage] = useState(1); //номер страницы
@@ -59,19 +58,14 @@ const Films = () => {
       query.isSeries ? '&isSeries=' + query.isSeries : ''
     }&year=2015-2020&rating.kp=8-10`;
     // seriesParam = (isSeries in )
-    console.log(URL);
-    console.log('ДОСТУП к БД');
     (async () => {
       try {
         const response = await fetch(URL, options);
-        console.log('STATUS', response.ok);
         const data = await response.json();
         if (!response.ok) setError(data.message);
         setFilmData(data);
         setIsLoading(false);
-        console.log('ЧЕ ПРИШЛО', data);
       } catch (e) {
-        console.log('ПОЙМАНА ОШИБКА', e.message);
         setError(e);
         setIsLoading(false);
       }
@@ -83,14 +77,12 @@ const Films = () => {
     !page ? setPage(1) : setPage(page);
     !sort ? setSortKey('') : setSortKey(sort);
     !isSeries ? setIsSeries('') : setSortKey(isSeries);
-    console.log('ЗАШЛО useEffect');
   }, [queryParams]);
 
   //меняем номер страницы
   function changePage(event) {
     event.preventDefault();
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-    console.log(query);
     const value = event.target.innerText;
     const params = {};
 
@@ -122,21 +114,20 @@ const Films = () => {
     if (seriesValue) params.isSeries = seriesValue;
     setSearchParams(params);
     setIsLoading(true);
-    console.log(query);
   }
 
-  console.log('ПОКАЗЫВАЮ', filmData);
   if (isLoading) {
     return <h1>Загружаю данные...</h1>;
   }
   if (error) {
-    console.log('РЕНДЕР ОШИБКИ');
     return (
       <>
-        <div>Ошибка {error?.message}</div>
+        {/* <div>Ошибка {error?.message}</div>
         <p style={{ fontSize: '10rem' }}>&#128584;</p>
         <div>Не удалось отобразить контент</div>
         <Link></Link>
+        <hr></hr> */}
+        <NotFound status={error.message} />
       </>
     );
   }

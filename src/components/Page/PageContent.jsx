@@ -70,7 +70,6 @@ const PageContent = (content) => {
       professions.push(item.profession);
     return professions;
   }, []);
-  console.log(professions);
 
   const genresProp = genres.map((_) => _.name).join(', ');
   const movieLengthProp = timeFormat(movieLength);

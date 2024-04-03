@@ -4,6 +4,7 @@ import { options } from '../../data/request';
 import PageContent from './PageContent';
 import demoData from '../../data/demo/testFilmData.json';
 import footage from '../../data/demo/demoFootage.json';
+import NotFound from '../NotFound';
 
 // eslint-disable-next-line
 const SingleFilmPage = ({ isDemo, film }) => {
@@ -17,58 +18,63 @@ const SingleFilmPage = ({ isDemo, film }) => {
   const [filmData, setFilmData] = useState(null);
   const [error, setError] = useState(!!film ? film : '');
   const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     (async () => {
       setError('');
       try {
-        // throw new Error('купи подписку, заебал!');
         const response = await fetch(url, options); //тут выдаёт 403, если кончилась подписка
         if (!response.ok) {
-          console.log(response.ok);
-          throw new Error('купи подписку, заебал!');
+          throw new Error(response.status);
         }
         const data = await response.json();
         setFilmData(data);
         setIsLoading(false);
-        console.log('************');
       } catch (e) {
         setError(e);
-        console.log(e.message);
       }
     })();
   }, [url]);
-  console.log(filmData);
-  console.log('______________');
-  console.log(error, 'error');
-  console.log(filmData, 'data');
-  console.log(demoData, 'DEMO');
-  console.log(isLoading, 'isLoading');
 
-  // если поймали ошибку при запросе
-  if (error || isDemo) {
+  // если поймали ошибку при запросе - 404
+  // если кончились запросы - даём перейти в демо режим
+  if (isDemo) {
     return (
-      <div>
-        {!!isDemo ? (
-          <>
-            <h1>Демонстрационная версия</h1>
-            <h4>Демо-контент:</h4>
-            <hr></hr>
-          </>
-        ) : (
-          <>
-            <h1>Контент заблокирован</h1>
-            <h3>
-              Достигнут предел суточных запросов, пожалуйста, {error.message}
-            </h3>
-            <h4>Демо-контент:</h4>
-            <hr></hr>
-          </>
-        )}
-
+      <>
+        <h1>Демонстрационная версия</h1>
+        <h4>Демо-контент:</h4>
+        <hr></hr>
         <PageContent {...demoData} footage={footage} />
-      </div>
+      </>
     );
   }
+  if (error) {
+    return <NotFound status={error.message} />;
+  }
+  // if (error || isDemo) {
+  //   return (
+  //     <div>
+  //       {!!isDemo ? (
+  //         <>
+  //           <h1>Демонстрационная версия</h1>
+  //           <h4>Демо-контент:</h4>
+  //           <hr></hr>
+  //         </>
+  //       ) : (
+  //         <>
+  //           <h1>Контент заблокирован</h1>
+  //           <h3>
+  //             Достигнут предел суточных запросов, пожалуйста, {error.message}
+  //           </h3>
+  //           <h4>Демо-контент:</h4>
+  //           <hr></hr>
+  //         </>
+  //       )}
+
+  //       <PageContent {...demoData} footage={footage} />
+  //     </div>
+  //   );
+  // }
 
   return <>{isLoading ? <h1>Загрузка</h1> : <PageContent {...filmData} />}</>;
 };

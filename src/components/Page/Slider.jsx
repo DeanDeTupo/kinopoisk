@@ -10,7 +10,6 @@ const Slider = ({ id, content: footage }) => {
   const [movieImages, setMovieImages] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [step, setStep] = useState(0);
-  console.log('!!!!!!!!', id);
 
   useEffect(() => {
     if (!footage) {
@@ -18,7 +17,6 @@ const Slider = ({ id, content: footage }) => {
     (async () => {
       const URL = `https://api.kinopoisk.dev/v1.4/image?page=1&limit=100&movieId=${id}`;
       const request = await fetch(URL, options);
-      console.log(request.ok);
       const data = await request.json();
       setMovieImages(data);
       setIsLoading(false);
@@ -31,7 +29,6 @@ const Slider = ({ id, content: footage }) => {
     return <h2>Загружаю</h2>;
   }
   const content = movieImages.docs; //это массив с ссылками на ВСе картинки к фильму
-  console.log('ХУУУУЙ', content);
   const imgList = content
     .filter((item) => {
       return item.type === 'still';
@@ -59,18 +56,13 @@ const Slider = ({ id, content: footage }) => {
   const prevSlide = () => {
     let stepValue = step;
     let nextStep = stepValue === 0 ? imgList.length - 1 : --stepValue;
-    console.log(nextStep);
     setStep(nextStep);
   };
   const nextSlide = () => {
     let stepValue = step;
     let nextStep = stepValue === imgList.length - 1 ? 0 : ++stepValue;
-    console.log(nextStep);
     setStep(nextStep);
   };
-
-  console.log('****', prev, step, next, '***');
-  console.log('****', renderList, '***');
 
   if (!isLoading && imgList.length === 0) return;
   return (

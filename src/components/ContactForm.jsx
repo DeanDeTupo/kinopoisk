@@ -29,10 +29,7 @@ const ContactForm = () => {
     setEmail('');
     setFeedback('');
   }
-  console.log(errorName);
-  console.log(errorEmail);
-  console.log(errorFeedback);
-  console.log('_____________');
+
   return (
     <div>
       <section>

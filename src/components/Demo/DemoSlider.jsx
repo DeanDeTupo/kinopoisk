@@ -41,18 +41,13 @@ const DemoSlider = ({ id, content: footage }) => {
   const prevSlide = () => {
     let stepValue = step;
     let nextStep = stepValue === 0 ? imgList.length - 1 : --stepValue;
-    console.log(nextStep);
     setStep(nextStep);
   };
   const nextSlide = () => {
     let stepValue = step;
     let nextStep = stepValue === imgList.length - 1 ? 0 : ++stepValue;
-    console.log(nextStep);
     setStep(nextStep);
   };
-
-  console.log('****', prev, step, next, '***');
-  console.log('****', renderList, '***');
 
   return (
     <>
