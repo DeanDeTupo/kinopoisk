@@ -1,18 +1,32 @@
 .nav {
-  margin: 5px;
+  margin: 5px 0;
   border-bottom: 2px solid lightcoral;
   display: flex;
   justify-content: center;
 }
+
 .nav a {
-  margin: 10px;
+  padding: 10px;
   color: whitesmoke;
 }
+
 .nav a:link {
   color: unset;
   text-decoration: none;
 }
 
-.nav a:visited {
+/* .nav a:visited {
   color: unset;
+} */
+
+.active111 {
+  background-color: lightcoral;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  font-weight: 700;
+}
+
+.active111:link {
+  color: rgb(18, 44, 67);
 }

@@ -5,6 +5,7 @@ import { RiArrowLeftLine } from 'react-icons/ri';
 import InfoRow from './InfoRow';
 import Slider from './Slider';
 import DemoSlider from '../Demo/DemoSlider';
+import Demo from '../Demo/Demo';
 
 const timeFormat = (length) => {
   let hour = String(parseInt(length / 60)).padStart(2, '0');
@@ -162,7 +163,10 @@ const PageContent = (content) => {
           </div>
           {/* ниже кадры из фильма */}
           {!!footage ? (
-            <DemoSlider content={footage} />
+            <>
+              {/* <DemoSlider content={footage} /> */}
+              <Demo content={footage} />
+            </>
           ) : (
             <Slider id={id}></Slider>
           )}

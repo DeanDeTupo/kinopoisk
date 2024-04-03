@@ -1,14 +1,38 @@
 import React, { useState } from 'react';
 import styles from './ContactForm.module.css';
 
+function validateEmail(email) {
+  const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if (!email.length) return false;
+  return email.match(pattern) ? true : false;
+}
+
 const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [feedback, setFeedback] = useState('');
 
+  const [errorName, setErrorName] = useState(false);
+  const [errorEmail, setErrorEmail] = useState(false);
+  const [errorFeedback, setErrorFeedback] = useState(false);
+
   function submitForm(event) {
-    // event.preventDefault();S
+    event.preventDefault();
+    setErrorName(name.length < 2);
+    setErrorEmail(!validateEmail(email));
+    setErrorFeedback(feedback.length < 10);
+
+    if (name.length < 2 || !validateEmail(email) || feedback.length < 10)
+      return;
+    alert(`Спасибо за отзыв, ${name}`);
+    setName('');
+    setEmail('');
+    setFeedback('');
   }
+  console.log(errorName);
+  console.log(errorEmail);
+  console.log(errorFeedback);
+  console.log('_____________');
   return (
     <div>
       <section>
@@ -20,7 +44,7 @@ const ContactForm = () => {
           <label htmlFor="name">Имя</label>
           <div>
             <input
-              className={styles.field}
+              className={`${styles.field} ${errorName ? styles.error : ''}`}
               id="name"
               type="text"
               placeholder="Ваше имя"
@@ -33,11 +57,18 @@ const ContactForm = () => {
                 setName(e.target.value);
               }}
             ></input>
+            <p
+              className={`${
+                errorName ? styles.errorMessage : styles.errorHide
+              }`}
+            >
+              *минимум 2 символа
+            </p>
           </div>
           <label htmlFor="email">e-mail</label>
           <div>
             <input
-              className={styles.field}
+              className={`${styles.field} ${errorEmail ? styles.error : ''}`}
               autoComplete="new-password"
               id="email"
               type="email"
@@ -48,14 +79,21 @@ const ContactForm = () => {
                 setEmail(e.target.value);
               }}
             ></input>
+            <p
+              className={`${
+                errorName ? styles.errorMessage : styles.errorHide
+              }`}
+            >
+              *непрвильный e-mail
+            </p>
           </div>
           <label htmlFor="text">Текст отзыва</label>
           <div>
             <textarea
-              className={styles.field}
+              className={`${styles.field} ${errorFeedback ? styles.error : ''}`}
               id="text"
               type="text"
-              placeholder="Ваш отзыв"
+              placeholder="Ваш отзыв, минимум 10 символов"
               value={feedback}
               required
               autoComplete="off"
@@ -66,6 +104,13 @@ const ContactForm = () => {
                 setFeedback(e.target.value);
               }}
             ></textarea>
+            <p
+              className={`${
+                errorFeedback ? styles.errorMessage : styles.errorHide
+              }`}
+            >
+              *минимум 10 символов
+            </p>
           </div>
 
           <button className={styles.formBtn} onClick={(e) => submitForm(e)}>

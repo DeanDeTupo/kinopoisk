@@ -1,53 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { RiArrowLeftLine } from 'react-icons/ri';
-import styles from '../Demo/Demo.module.css';
-import { options } from '../../data/request';
+import styles from './Demo.module.css';
 
-const Slider = ({ id, content: footage }) => {
-  //   console.log(footage);
-  // const [slide, setSlide] = useState(0);
-
-  const [movieImages, setMovieImages] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+const DemoSlider = ({ content: footage }) => {
   const [step, setStep] = useState(0);
-  console.log('!!!!!!!!', id);
 
-  useEffect(() => {
-    if (!footage) {
-    }
-    (async () => {
-      const URL = `https://api.kinopoisk.dev/v1.4/image?page=1&limit=100&movieId=${id}`;
-      const request = await fetch(URL, options);
-      console.log(request.ok);
-      const data = await request.json();
-      setMovieImages(data);
-      setIsLoading(false);
-    })();
-  }, []);
-  // _______________________________________________________________
-  // создадим массив с ссылками на картинки
-
-  if (isLoading) {
-    return <h2>Загружаю</h2>;
-  }
-  const content = movieImages.docs; //это массив с ссылками на ВСе картинки к фильму
-  console.log('ХУУУУЙ', content);
-  const imgList = content
-    .filter((item) => {
-      return item.type === 'still';
-    })
-    .map((item) => {
-      return item.previewUrl || item.url;
-    });
+  const imgList = footage;
 
   const renderList = [];
-  let offset = 0;
 
-  const style = {
-    display: 'flex',
-    transition: 'all 1000ms ease',
-    // transform: `translateX(-${step * 600}px)`,
-  };
+  //   const style = {
+  //     display: 'flex',
+  //     transition: 'all 1000ms ease',
+  //     boxSizing: 'border-box',
+  //     // transform: `translateX(-${step * 600}px)`,
+  //   };
   // индексы предыдущего и следущего элемента
   let prev = step - 1 < 0 ? imgList.length - 1 : step - 1;
   let next = step + 1 === imgList.length ? 0 : step + 1;
@@ -70,9 +37,8 @@ const Slider = ({ id, content: footage }) => {
   };
 
   console.log('****', prev, step, next, '***');
-  console.log('****', renderList, '***');
+  console.log('****', !!renderList, '***');
 
-  if (!isLoading && imgList.length === 0) return;
   return (
     <div style={{ position: 'relative' }}>
       <h2>Кадры из фильма</h2>
@@ -97,5 +63,31 @@ const Slider = ({ id, content: footage }) => {
     </div>
   );
 };
+{
+  /* <div className={styles.slider}>
+  <div className={styles.sliderContainer}>
+    <div>
+      {!!renderList &&
+        renderList.map((item) => {
+          return (
+            <img
+              src={item}
+              className={styles.slider_img}
+              alt="Кадр из фильма"
+            ></img>
+          );
+        })}
+    </div>
+  </div>
+  <RiArrowLeftLine
+    className={`${styles.btn} ${styles.btnRight}`}
+    onClick={nextSlide}
+  />
+  <RiArrowLeftLine
+    className={`${styles.btn} ${styles.btnLeft}`}
+    onClick={prevSlide}
+  />
+</div> */
+}
 
-export default Slider;
+export default DemoSlider;

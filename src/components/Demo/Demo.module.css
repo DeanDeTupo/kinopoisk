@@ -1,0 +1,57 @@
+.container {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  /* position: relative; */
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 10px 0;
+}
+
+.imgContainer {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 600px;
+  /* padding: 5px; */
+}
+
+.img {
+  width: 600px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  font-size: 3rem;
+  color: rgb(216, 216, 216);
+  transition: all 200ms;
+}
+
+.btnRight {
+  right: 0;
+  transform: translateY(-50%) rotateZ(0.5turn);
+}
+
+.btnLeft {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btnRight:hover {
+  transform: translateY(-50%) rotateZ(0.5turn) scale(1.1);
+  cursor: pointer;
+}
+
+.btnLeft:hover {
+  transform: translateY(-50%) scale(1.1);
+  cursor: pointer;
+}
+
+.error {
+  border-color: red;
+}

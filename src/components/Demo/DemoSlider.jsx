@@ -10,15 +10,16 @@ const DemoSlider = ({ id, content: footage }) => {
   const [step, setStep] = useState(0);
   //   console.log('!!!!!!!!', id);
 
-  const content = footage.docs; //это массив с ссылками на ВСе картинки к фильму
+  const content = footage; //это массив с ссылками на ВСе картинки к фильму
 
-  const imgList = content
-    .filter((item) => {
-      return item.type === 'still';
-    })
-    .map((item) => {
-      return item.previewUrl || item.url;
-    });
+  const imgList = content;
+  //   .filter((item) => {
+  //     return item.type === 'screenshot';
+  //   })
+  //   .map((item) => {
+  //     return item.previewUrl || item.url;
+  //   });
+  // console.log(imgList);
 
   const renderList = [];
   let offset = 0;
@@ -26,6 +27,7 @@ const DemoSlider = ({ id, content: footage }) => {
   const style = {
     display: 'flex',
     transition: 'all 1000ms ease',
+    boxSizing: 'border-box',
     // transform: `translateX(-${step * 600}px)`,
   };
   // индексы предыдущего и следущего элемента

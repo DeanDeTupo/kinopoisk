@@ -1,15 +1,35 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './Menu.module.css';
 
 const Menu = () => {
   return (
     <nav className={styles.nav}>
-      <Link to=".">Home</Link>{' '}
+      <NavLink
+        to="."
+        className={({ isActive }) => (isActive ? styles.active111 : '')}
+      >
+        Главная
+      </NavLink>{' '}
       {/* точка тут для перемещения к корневому элементу*/}
-      <Link to="films">Фильмы</Link>
-      <Link to="demo">Демо</Link>
-      <Link to="recommend">Выбор редакции</Link>
+      <NavLink
+        to="films"
+        className={({ isActive }) => (isActive ? styles.active111 : '')}
+      >
+        Фильмы
+      </NavLink>
+      <NavLink
+        to="demo"
+        className={({ isActive }) => (isActive ? styles.active111 : '')}
+      >
+        Демо
+      </NavLink>
+      <NavLink
+        to="recommend"
+        className={({ isActive }) => (isActive ? styles.active111 : '')}
+      >
+        Фильм дня
+      </NavLink>
     </nav>
   );
 };

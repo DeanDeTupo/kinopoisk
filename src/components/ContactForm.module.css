@@ -24,15 +24,26 @@
   display: block;
   width: 150px;
   height: 30px;
-  background-color: chocolate;
+  background-color: rgb(20, 20, 20);
+  color: white;
   border-radius: 10px;
   align-self: center;
+  transition: all 200ms;
+}
+
+.formBtn:hover {
+  background-color: rgb(235, 235, 235);
+  color: rgb(20, 20, 20);
+  cursor: pointer;
 }
 
 .form input,
 textarea {
   padding: 6px;
-  margin-bottom: 10px;
+}
+.form input:focus,
+textarea:focus {
+  border-color: unset;
 }
 
 .form label {
@@ -40,4 +51,24 @@ textarea {
   align-self: start;
   margin-bottom: 5px;
   font-weight: 700;
+  margin-top: 5px;
+}
+
+.error {
+  border-color: red;
+}
+
+.errorMessage {
+  color: red;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin: 0;
+  text-align: start;
+}
+
+.errorHide {
+  display: hidden;
+}
+.errorVisible {
+  display: block;
 }
