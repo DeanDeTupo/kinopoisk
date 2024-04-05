@@ -144,29 +144,33 @@ const Films = () => {
   return (
     <div>
       <h2>Топ-100 лучших фильмов и сериалов 2015-2020</h2>
-      <form>
-        <label>Сортировать </label>
+      <form className={styles.form}>
+        <div className={styles.sortParam}>
+          <label>Сортировать </label>
 
-        <select
-          name="sort"
-          value={query.sort}
-          onChange={(e) => changeSortParam(e)}
-        >
-          <option value="">по порядку</option>
-          <option value="rating">по рейтингу</option>
-          <option value="year">по дате выхода</option>
-        </select>
-        <label htmlFor="series">Искать</label>
-        <select
-          name="sort"
-          id="series"
-          value={query.isSeries}
-          onChange={(e) => changeIncludeSeries(e)}
-        >
-          <option value="">фильмы и сериалы</option>
-          <option value="false">фильмы</option>
-          <option value="true">сериалы</option>
-        </select>
+          <select
+            name="sort"
+            value={query.sort}
+            onChange={(e) => changeSortParam(e)}
+          >
+            <option value="">по порядку</option>
+            <option value="rating">по рейтингу</option>
+            <option value="year">по дате выхода</option>
+          </select>
+        </div>
+        <div className={styles.sortParam}>
+          <label htmlFor="series">Искать </label>
+          <select
+            name="sort"
+            id="series"
+            value={query.isSeries}
+            onChange={(e) => changeIncludeSeries(e)}
+          >
+            <option value="">фильмы и сериалы</option>
+            <option value="false">фильмы</option>
+            <option value="true">сериалы</option>
+          </select>
+        </div>
       </form>
       <Root
         page={page}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styles from './PageContent.module.css';
 import { RiArrowLeftLine } from 'react-icons/ri';
 import InfoRow from './InfoRow';
@@ -62,7 +62,7 @@ const PageContent = (content) => {
     isSeries,
   } = content;
 
-  console.log('внутри pfge content', footage);
+  // console.log('внутри pfge content', footage);
 
   //список всех профессий
   const professions = persons.reduce((professions, item) => {
@@ -76,6 +76,11 @@ const PageContent = (content) => {
   const countriesProp = countries.map((item) => item.name).join(', ');
   const premiereProp = parseDate(premiere.world);
   const ageRatingProp = +ageRating + '+';
+  const navigate = useNavigate();
+  const toKP = () => {
+    const url = `https://www.kinopoisk.ru/film/${id}`;
+    navigate(url);
+  };
 
   return (
     <>
@@ -115,6 +120,12 @@ const PageContent = (content) => {
               </iframe>
             </>
           )}
+          <a href={`https://www.kinopoisk.ru/film/${id}`} target="_blank">
+            <button className={styles.kpBtn}>
+              <p>Смотреть на KP </p>
+              <img src="https://www.ph4.org/_RU/DL/LOGO_ICON/k/kinopoisk_.gif"></img>
+            </button>
+          </a>
         </div>
         {/* ---------------------------------------------------- */}
         <div className={styles.gap}></div>
@@ -154,11 +165,14 @@ const PageContent = (content) => {
                 key={index}
                 title={profession + ':'}
                 content={personList}
+                // style={styles.cllipped}
               />
             );
           })}
-          <div className={styles}>
-            <p>Описание: {description}</p>
+          <div className={styles.description}>
+            <p>
+              <strong>Описание:</strong> {description}
+            </p>
           </div>
           {/* ниже кадры из фильма */}
           {!!footage ? (

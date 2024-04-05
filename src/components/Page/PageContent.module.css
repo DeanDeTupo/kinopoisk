@@ -32,7 +32,7 @@
 }
 
 .mainColumn p {
-  border-top: whitesmoke solid 1px;
+  /* border-top: whitesmoke solid 1px; */
   text-align: justify;
 }
 
@@ -75,6 +75,13 @@
   align-self: flex-start;
   margin: 0 0 10px 10px;
 }
+.rightColumn p {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* padding-right: 10px; */
+  /* border-top: none; */
+}
 
 .footageCarousel {
   display: flex;
@@ -91,4 +98,48 @@
   line-height: 1rem;
   vertical-align: middle;
   margin-top: 4px;
+}
+.age p {
+  border-top: 1px solid white;
+}
+
+.kpBtn {
+  /* display: inline-block; */
+  height: 50px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  padding: 0 8px 0 15px;
+  line-height: 1.5rem;
+  vertical-align: middle;
+  border: none;
+  margin: 15px;
+  transition: all 0.2s;
+  background-color: aliceblue;
+}
+.kpBtn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(0.35turn, #ff8c3a 80%, #ffce1b);
+  transform: scale(1.03);
+}
+.kpBtn img {
+  display: inline-block;
+  width: 36px;
+  border-radius: 18px;
+  object-fit: contain;
+  margin-top: 5px;
+  margin: auto 0;
+  top: 5%;
+  vertical-align: middle;
+}
+.kpBtn p {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 5px;
+  border: none;
+}
+
+.description {
+  border-top: 1px solid white;
 }

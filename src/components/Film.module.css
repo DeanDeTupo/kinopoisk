@@ -31,12 +31,21 @@
   display: flex;
   flex-direction: column;
   /* justify-content: flex-end; */
-  gap: 10px;
+  gap: 5px;
   margin-left: 20px;
   margin-right: auto;
   text-align: start;
   width: 50%;
   background-color: initial;
+}
+
+.shortDescription {
+  justify-self: end;
+  margin-top: 3px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 20px;
 }
 
 .poster {
@@ -53,6 +62,7 @@
 .secondInfo {
   font-size: 16px;
   justify-self: end;
+  margin-bottom: auto;
 }
 
 .rating {

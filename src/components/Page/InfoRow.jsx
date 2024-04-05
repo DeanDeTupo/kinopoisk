@@ -7,7 +7,8 @@ const InfoRow = ({ title, content, style }) => {
       <div className={styles.leftColumn}>{title}</div>
 
       <div className={styles.rightColumn}>
-        <div className={style}>{content}</div>
+        {/* <div className={style}>{content}</div> */}
+        <p className={style}>{content}</p>
       </div>
     </div>
   );

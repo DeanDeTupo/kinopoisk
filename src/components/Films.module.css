@@ -2,3 +2,11 @@
   text-decoration: none;
   color: inherit;
 }
+
+.form {
+}
+
+.sortParam {
+  display: inline;
+  margin: 10px;
+}

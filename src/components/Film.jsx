@@ -39,6 +39,7 @@ const Film = (item) => {
       <img
         className={styles.poster}
         src={poster.previewURL || poster.url}
+        alt="Обложка"
       ></img>
       <div className={styles.desc}>
         <div className={styles.title}>
@@ -59,6 +60,9 @@ const Film = (item) => {
         <p className={styles.secondInfo}>
           {!!countries.length && countries[0].name} &#183;{' '}
           {!!genres[0].name && genres[0].name}
+        </p>
+        <p className={styles.shortDescription}>
+          {shortDescription || rest.description}
         </p>
       </div>
 
