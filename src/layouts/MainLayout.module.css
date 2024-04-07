@@ -5,6 +5,7 @@
   justify-content: space-between;
   /* background-color: whitesmoke;
   color: rgb(18, 44, 67); */
+  position: relative;
 }
 .contentWrapper {
   display: flex;
